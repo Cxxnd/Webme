@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="in_ID">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About me</title>
+    <link type="image/jpeg" rel="icon" href="img/profil.jpg">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body class="body">
+      <div id="loading">
+        <div id="wifi-loader">
+          <svg class="circle-outer" viewBox="0 0 86 86">
+           <circle class="back" cx="43" cy="43" r="40"></circle>
+           <circle class="front" cx="43" cy="43" r="40"></circle>
+               <circle class="new" cx="43" cy="43" r="40"></circle>
+            </svg>
+          <svg class="circle-middle" viewBox="0 0 60 60">
+            <circle class="back" cx="30" cy="30" r="27"></circle>
+            <circle class="front" cx="30" cy="30" r="27"></circle>
+            </svg>
+            <svg class="circle-inner" viewBox="0 0 34 34">
+                <circle class="back" cx="17" cy="17" r="14"></circle>
+                <circle class="front" cx="17" cy="17" r="14"></circle>
+                <circle class="down" cx="17" cy="17" r="2">.</circle>
+            </svg>
+            <div class="text" data-text="loading"></div>
+        </div>
+    </div>
+  <!--- pembatas--->
+    <nav class="Nav">
+      <div>
+        <a href="index.html">
+        <img src="img/profil.jpg" class="img">
+      </a>
+      </div>
+      <ul>
+       <div class="NAVA"><li><a href="index.html" style="color: white;text-decoration: none;">Home</a></li></div>
+       <div class="NAVC"><li><a href="mymusic.html" style="color: white; text-decoration: none;">Favorite Music</a></li></div>
+       <div class="dropdown">
+       <li class="dropbtn">Other </li>
+       <div class="dropdown-content">
+         <a href="Support.html">supportme</a>
+         <a href="other.html">Aboutme</a>
+        </div>
+       </div>
+      </ul>
+    </nav>
+     <div class="Content">
+     <div class="Paper">
+       <h2>Welcome to my About</h2>
+         <p>This is About me</p>
+       </div>
+      </div>
+          <script>
+          document.addEventListener("DOMContentLoaded", function() {
+    setTimeout(function() {
+        const loadingScreen = document.getElementById('loading');
+        loadingScreen.classList.add('hidden');
+    }, 4000);
+});
+
+          
+        function bukaTab(url) {
+            window.location.href = url;
+        }
+        function greetUser(name) {
+            let welcome = "Have a nice day";
+            alert(`Welcome to my website, ${name}`);
+            alert(`${welcome}, ${name} :)`);
+        }
+        // jika nama belum ada
+        let storedName = localStorage.getItem('name');
+        if (storedName) {
+            greetUser(storedName);
+        } else {
+            let name = prompt("Masukkan nama Anda:");
+            if (!name) {
+                alert("Masukkan nama Anda terlebih dahulu");
+                bukaTab('https://www.google.com');
+            } else {
+                localStorage.setItem('name', name);
+                greetUser(name);
+            }
+        }
+   </script>
+  </body>
+</html>
