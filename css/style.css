@@ -1,7 +1,7 @@
 @media only screen and (max-width: 600px) {
 body {
   background-color: black;
-  background-image: url(img/gunung.png);
+  background-image: url('img/gunung.png');
   background-position: center;
   background-size: cover;
   margin: 0;
@@ -399,7 +399,7 @@ transform: scale(1.1);
  @media only screen and (min-width: 601px) {
   body {
   background-color: black;
-  background-image: url(img/gunung.png);
+  background-image: url('img/gunung.png');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
