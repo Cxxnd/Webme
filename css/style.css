@@ -1,0 +1,794 @@
+@media only screen and (max-width: 600px) {
+body {
+  background-color: black;
+  background-image: url(/img/gunung.png);
+  background-position: center;
+  background-size: cover;
+  margin: 0;
+  padding: 0;  
+}
+.Content {
+  padding: 10px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: top center;
+  height: 80vh;
+}
+.Paper{
+  background-color:rgba(0, 0, 0, 0.52);
+  padding: 50px;
+  border-radius: 20px;
+  width: 50%;
+  height: 50%;
+  max-width: 600px;
+  text-align: left;
+}
+.Nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  color: white;
+}
+.Nav ul {
+  list-style-type: none;
+  display: flex;
+}
+.Nav ul li {
+  margin-right: 25px;
+}
+.Nav a {
+  text-decoration: none;
+  color: white;
+}
+.NAVA:hover{
+  transform: scale(1.4);
+  transition: .3s;
+}
+.NAVC:hover{
+  transform: scale(1.2);
+  transition: .3s;
+}
+.NAVD:hover{
+  transform: scale(1.4);
+  transition: .3s;
+}
+/* .Logo:hover {
+  transform: scale(1.4);
+  transition: .3s; 
+}*/
+.img{
+  width: 70px;
+  height: 70px;
+}
+.img:hover{
+transform: scale(1.1);
+  transition: .3s;
+  border-radius: 50px;
+}
+#loading {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: black;
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 0.5s ease, visibility 0.5s ease;
+}
+
+#loading.hidden {
+    opacity: 0;
+    visibility: hidden;
+}
+
+#wifi-loader {
+
+    --background: #62abff;
+
+    --front-color: aqua;
+    --back-color: #c3c8de;
+    --text-color: #414856;
+    width: 64px;
+    height: 64px;
+    border-radius: 50px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#wifi-loader svg {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#wifi-loader svg circle {
+    position: absolute;
+    fill: none;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    transform: rotate(-100deg);
+    transform-origin: center;
+    stroke-width: 6px;
+}
+
+#wifi-loader svg.circle-outer {
+    height: 86px;
+    width: 86px;
+}
+
+#wifi-loader svg circle.back {
+    stroke: var(--back-color);
+}
+#wifi-loader svg circle.front {
+    stroke: var(--front-color);
+}
+#wifi-loader svg.circle-outer circle {
+    stroke-dasharray: 62.75 188.25;
+}
+
+#wifi-loader svg circle.down {
+  stroke: var(--front-color);
+}
+#wifi-loader svg.circle-outer circle.back {
+    --webkit-animation: circle-outer 1.8s ease infinite 0.3s;
+             animation: circle-outer 1.8s ease infinite 0.3s;
+}
+#wifi-loader svg.circle-outer circle.front {
+    --webkit-animation: circle-outer 1.8s ease infinite 0.15s;
+             animation: circle-outer 1.8s ease infinite 0.15s;
+}
+
+#wifi-loader svg.circle-middle {
+    height: 60px;
+    width: 60px;
+}
+#wifi-loader svg.circle-middle circle {
+    stroke-dasharray: 42.5 127.5;
+}
+#wifi-loader svg.circle-middle circle.back {
+    --webkit-animation: circle-middle 1.8s ease infinite 0.25s;
+             animation: circle-middle 1.8s ease infinite 0.25s;
+}
+#wifi-loader svg.circle-middle circle.front {
+    --webkit-animation: circle-middle 1.8s ease infinite 0.1s;
+             animation: circle-middle 1.8s ease infinite 0.1s;
+}
+
+#wifi-loader svg.circle-inner {
+    height: 34px;
+    width: 34px;
+}
+#wifi-loader svg.circle-inner circle {
+    stroke-dasharray: 22 66;
+}
+#wifi-loader svg.circle-inner circle.back {
+    --webkit-animation: circle-inner 1.8s ease infinite 0.2s;
+             animation: circle-inner 1.8s ease infinite 0.2s;
+}
+#wifi-loader svg.circle-inner circle.front {
+    --webkit-animation: circle-inner 1.8s ease infinite 0.05s;
+             animation: circle-inner 1.8s ease infinite 0.05s;
+}
+
+@-webkit-keyframes circle-outer {
+    0% {
+        stroke-dashoffset: 25;
+    }
+    25% {
+        stroke-dashoffset: 0;
+    }
+    65% {
+        stroke-dashoffset: 301;
+    }
+    80% {
+        stroke-dashoffset: 276;
+    }
+    100% {
+        stroke-dashoffset: 276;
+    }
+
+}
+@keyframes circle-outer {
+    0% {
+        stroke-dashoffset: 25;
+    }
+    25% {
+        stroke-dashoffset: 0;
+    }
+    65% {
+        stroke-dashoffset: 301;
+    }
+    80% {
+        stroke-dashoffset: 276;
+    }
+    100% {
+        stroke-dashoffset: 276;
+    }
+
+}
+
+@-webkit-keyframes circle-outer {
+    0% {
+        stroke-dashoffset: 17;
+    }
+    25% {
+        stroke-dashoffset: 0;
+    }
+    65% {
+        stroke-dashoffset: 204;
+    }
+    80% {
+        stroke-dashoffset: 187;
+    }
+    100% {
+        stroke-dashoffset: 187;
+    }
+
+}
+@keyframes circle-middle {
+    0% {
+        stroke-dashoffset: 17;
+    }
+    25% {
+        stroke-dashoffset: 0;
+    }
+    65% {
+        stroke-dashoffset: 204;
+    }
+    80% {
+        stroke-dashoffset: 187;
+    }
+    100% {
+        stroke-dashoffset: 187;
+    }
+
+}
+
+@-webkit-keyframes circle-inner {
+    0% {
+        stroke-dashoffset: 9;
+    }
+    25% {
+        stroke-dashoffset: 0;
+    }
+    65% {
+        stroke-dashoffset: 106;
+    }
+    80% {
+        stroke-dashoffset: 97;
+    }
+    100% {
+        stroke-dashoffset: 97;
+    }
+
+}
+@keyframes circle-inner {
+    0% {
+        stroke-dashoffset: 9;
+    }
+    25% {
+        stroke-dashoffset: 0;
+    }
+    65% {
+        stroke-dashoffset: 106;
+    }
+    80% {
+        stroke-dashoffset: 97;
+    }
+    100% {
+        stroke-dashoffset: 97;
+    }
+
+}
+
+#wifi-loader .text {
+    position: absolute;
+    bottom: -40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: lowercase;
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 0.2px;
+}
+
+#wifi-loader .text::before, #wifi-loader .text::after {
+    content: attr(data-text);
+}
+#wifi-loader .text::before {
+    color: var(--text-color);
+
+}
+
+#wifi-loader .text::after {
+    color: var(--front-color);
+    --webkit-animation: text-animation 3.6s ease infinite;
+             animation: text-animation 3.6s ease infinite;
+    position: absolute;
+    left: 0;
+}
+
+@-webkit-keyframes text-animation {
+    0% {
+        -webkit-clip-path: inset(0 100% 0 0);
+                clip-path: inset(0 100% 0 0);
+    }
+    50% {
+        -webkit-clip-path: inset(0);
+                clip-path: inset(0);
+    }
+    100% {
+        -webkit-clip-path: inset(0  0 0 100%);
+                clip-path: inset(0  0 0 100%);
+    }
+    
+}
+
+@keyframes text-animation {
+    0% {
+        -webkit-clip-path: inset(0 100% 0 0);
+                clip-path: inset(0 100% 0 0);
+    }
+    50% {
+        -webkit-clip-path: inset(0);
+                clip-path: inset(0);
+    }
+    100% {
+        -webkit-clip-path: inset(0  0 0 100%);
+                clip-path: inset(0  0 0 100%);
+    }
+    
+}
+
+
+/* Dropdown Button */
+.dropbtn {
+  list-style-type: none;
+  background-color: rgba(0,0,0,0.2);
+  color: white;
+  padding:10px;
+  border: none;
+}
+.dropbtn:hover{
+  transform: scale(1.4);
+  transition: .3s;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color:rgba(0,0,0,0.2);
+  min-width: 20px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: white;
+  padding: 12px 0px;
+  text-decoration: none;
+  display:block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: rgba(0,0,0,0.2);}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {background-color:rgba(0,0,0,0.2);}
+}
+
+ @media only screen and (min-width: 601px) {
+  body {
+  background-color: black;
+  background-image: url('/img/gunung.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin: 0;
+  padding: 0;  
+}
+.Content {
+  padding: 10px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: top center;
+  height: 80vh;
+}
+.Paper{
+  background-color:rgba(0, 0, 0, 0.52);
+  padding: 50px;
+  border-radius: 20px;
+  width: 50%;
+  height: 50%;
+  max-width: 600px;
+  text-align: left;
+}
+.Nav {
+  display: flex;
+  align-items: center;
+  justify-content:space-between;
+  padding: 10px 20px;
+  color: white;
+}
+.Nav ul {
+  list-style-type: none;
+  display: flex;
+}
+.Nav ul li {
+  margin-right: 25px;
+}
+.Nav a {
+  text-decoration: none;
+  color: white;
+}
+.NAVA:hover{
+  transform: scale(1.4);
+  transition: .3s;
+}
+.NAVC:hover{
+  transform: scale(1.2);
+  transition: .3s;
+}
+.NAVD:hover{
+  transform: scale(1.4);
+  transition: .3s;
+}
+.img{
+  width: 70px;
+  height: 70px;
+}
+.img:hover{
+transform: scale(1.1);
+  transition: .3s;
+  border-radius: 50px;
+}
+#loading {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: black;
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 0.5s ease, visibility 0.5s ease;
+}
+
+#loading.hidden {
+    opacity: 0;
+    visibility: hidden;
+}
+
+#wifi-loader {
+
+    --background: #62abff;
+
+    --front-color: aqua;
+    --back-color: #c3c8de;
+    --text-color: #414856;
+    width: 64px;
+    height: 64px;
+    border-radius: 50px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#wifi-loader svg {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#wifi-loader svg circle {
+    position: absolute;
+    fill: none;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    transform: rotate(-100deg);
+    transform-origin: center;
+    stroke-width: 6px;
+}
+
+#wifi-loader svg.circle-outer {
+    height: 86px;
+    width: 86px;
+}
+
+#wifi-loader svg circle.back {
+    stroke: var(--back-color);
+}
+#wifi-loader svg circle.front {
+    stroke: var(--front-color);
+}
+#wifi-loader svg.circle-outer circle {
+    stroke-dasharray: 62.75 188.25;
+}
+
+#wifi-loader svg circle.down {
+  stroke: var(--front-color);
+}
+#wifi-loader svg.circle-outer circle.back {
+    --webkit-animation: circle-outer 1.8s ease infinite 0.3s;
+             animation: circle-outer 1.8s ease infinite 0.3s;
+}
+#wifi-loader svg.circle-outer circle.front {
+    --webkit-animation: circle-outer 1.8s ease infinite 0.15s;
+             animation: circle-outer 1.8s ease infinite 0.15s;
+}
+
+#wifi-loader svg.circle-middle {
+    height: 60px;
+    width: 60px;
+}
+#wifi-loader svg.circle-middle circle {
+    stroke-dasharray: 42.5 127.5;
+}
+#wifi-loader svg.circle-middle circle.back {
+    --webkit-animation: circle-middle 1.8s ease infinite 0.25s;
+             animation: circle-middle 1.8s ease infinite 0.25s;
+}
+#wifi-loader svg.circle-middle circle.front {
+    --webkit-animation: circle-middle 1.8s ease infinite 0.1s;
+             animation: circle-middle 1.8s ease infinite 0.1s;
+}
+
+#wifi-loader svg.circle-inner {
+    height: 34px;
+    width: 34px;
+}
+#wifi-loader svg.circle-inner circle {
+    stroke-dasharray: 22 66;
+}
+#wifi-loader svg.circle-inner circle.back {
+    --webkit-animation: circle-inner 1.8s ease infinite 0.2s;
+             animation: circle-inner 1.8s ease infinite 0.2s;
+}
+#wifi-loader svg.circle-inner circle.front {
+    --webkit-animation: circle-inner 1.8s ease infinite 0.05s;
+             animation: circle-inner 1.8s ease infinite 0.05s;
+}
+
+@-webkit-keyframes circle-outer {
+    0% {
+        stroke-dashoffset: 25;
+    }
+    25% {
+        stroke-dashoffset: 0;
+    }
+    65% {
+        stroke-dashoffset: 301;
+    }
+    80% {
+        stroke-dashoffset: 276;
+    }
+    100% {
+        stroke-dashoffset: 276;
+    }
+
+}
+@keyframes circle-outer {
+    0% {
+        stroke-dashoffset: 25;
+    }
+    25% {
+        stroke-dashoffset: 0;
+    }
+    65% {
+        stroke-dashoffset: 301;
+    }
+    80% {
+        stroke-dashoffset: 276;
+    }
+    100% {
+        stroke-dashoffset: 276;
+    }
+
+}
+
+@-webkit-keyframes circle-outer {
+    0% {
+        stroke-dashoffset: 17;
+    }
+    25% {
+        stroke-dashoffset: 0;
+    }
+    65% {
+        stroke-dashoffset: 204;
+    }
+    80% {
+        stroke-dashoffset: 187;
+    }
+    100% {
+        stroke-dashoffset: 187;
+    }
+
+}
+@keyframes circle-middle {
+    0% {
+        stroke-dashoffset: 17;
+    }
+    25% {
+        stroke-dashoffset: 0;
+    }
+    65% {
+        stroke-dashoffset: 204;
+    }
+    80% {
+        stroke-dashoffset: 187;
+    }
+    100% {
+        stroke-dashoffset: 187;
+    }
+
+}
+
+@-webkit-keyframes circle-inner {
+    0% {
+        stroke-dashoffset: 9;
+    }
+    25% {
+        stroke-dashoffset: 0;
+    }
+    65% {
+        stroke-dashoffset: 106;
+    }
+    80% {
+        stroke-dashoffset: 97;
+    }
+    100% {
+        stroke-dashoffset: 97;
+    }
+
+}
+@keyframes circle-inner {
+    0% {
+        stroke-dashoffset: 9;
+    }
+    25% {
+        stroke-dashoffset: 0;
+    }
+    65% {
+        stroke-dashoffset: 106;
+    }
+    80% {
+        stroke-dashoffset: 97;
+    }
+    100% {
+        stroke-dashoffset: 97;
+    }
+
+}
+
+#wifi-loader .text {
+    position: absolute;
+    bottom: -40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: lowercase;
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 0.2px;
+}
+
+#wifi-loader .text::before, #wifi-loader .text::after {
+    content: attr(data-text);
+}
+#wifi-loader .text::before {
+    color: var(--text-color);
+
+}
+
+#wifi-loader .text::after {
+    color: var(--front-color);
+    --webkit-animation: text-animation 3.6s ease infinite;
+             animation: text-animation 3.6s ease infinite;
+    position: absolute;
+    left: 0;
+}
+
+@-webkit-keyframes text-animation {
+    0% {
+        -webkit-clip-path: inset(0 100% 0 0);
+                clip-path: inset(0 100% 0 0);
+    }
+    50% {
+        -webkit-clip-path: inset(0);
+                clip-path: inset(0);
+    }
+    100% {
+        -webkit-clip-path: inset(0  0 0 100%);
+                clip-path: inset(0  0 0 100%);
+    }
+    
+}
+
+@keyframes text-animation {
+    0% {
+        -webkit-clip-path: inset(0 100% 0 0);
+                clip-path: inset(0 100% 0 0);
+    }
+    50% {
+        -webkit-clip-path: inset(0);
+                clip-path: inset(0);
+    }
+    100% {
+        -webkit-clip-path: inset(0  0 0 100%);
+                clip-path: inset(0  0 0 100%);
+    }
+    
+}
+
+
+
+/* Dropdown Button */
+.dropbtn {
+  list-style-type: none;
+  background-color: rgba(0,0,0,0.2);
+  color: white;
+  padding:10px;
+  border: none;
+  font-size: 20px;
+}
+.dropbtn:hover{
+  transform: scale(1.4);
+  transition: .3s;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color:rgba(0,0,0,0.2);
+  min-width: 20px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: white;
+  padding: 16px 16px;
+  text-decoration: none;
+  display:block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: rgba(0,0,0,0.2);}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {background-color:rgba(0,0,0,0.2);}
+ }
